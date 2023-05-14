@@ -10,6 +10,7 @@ if(mysqli_num_rows($result) > 0){
              <th>Name</th>  
              <th>Mobile No</th>
              <th>Created At</th>
+             <th colspan="2">Action</th>
             </tr>';
 
             while($row = mysqli_fetch_assoc($result)){
@@ -18,6 +19,8 @@ if(mysqli_num_rows($result) > 0){
                               <td>{$row["name"]}</td>
                               <td>{$row["mobileno"]}</td>
                               <td>{$row["CreatedAt"]}</td>
+                              <td><button class='update-btn btn btn-success' data-uid='{$row["id"]}' data-bs-toggle='modal' data-bs-target='#exampleModal'>Update</button></td>
+                              <td><button class='delete-btn btn btn-danger' data-did='{$row["id"]}'>Delete </button></td>
                             </tr>";
             }
 $output .= "</table>";
