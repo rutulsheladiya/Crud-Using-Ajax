@@ -57,21 +57,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">Edit From</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <form action="" id="form">
-                            <div class="form-group mt-5 mb-4">
-                                <label for="" class="mb-2">Enter Name</label>
-                                <input type="text" name="name" id="name" placeholder="Enter Name" class="form-control">
-                            </div>
-                            <div class="form-group mb-4">
-                                <label for="" class="mb-2">Enter Mobile Number</label>
-                                <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile Number" class="form-control">
-                            </div>
-
-                            <div class="form-group mb-4 text-center">
-                                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </form>
+                    <div class="modal-body" id="modal-body">
                     </div>
                 </div>
             </div>
